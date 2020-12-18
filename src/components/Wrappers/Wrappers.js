@@ -9,7 +9,6 @@ import {
 import { useTheme, makeStyles } from "@material-ui/styles";
 import classnames from "classnames";
 
-// styles
 var useStyles = makeStyles(theme => ({
   badge: {
     fontWeight: 600,

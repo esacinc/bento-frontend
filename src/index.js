@@ -1,4 +1,7 @@
-import React from "react";
+// Internet Explorer 11 requires polyfills and partially supported by this project.
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/ie9';
+import React from 'react';
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";

@@ -32,7 +32,13 @@ const Layout = ({ classes, isSidebarOpened }) => (
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
             {aboutPageRoutes.map(
-              (aboutPageRoute) => <Route path={aboutPageRoute} component={About} />,
+              (aboutPageRoute) => (
+                <Route
+                  key={aboutPageRoute}
+                  path={aboutPageRoute}
+                  component={About}
+                />
+              ),
             )}
             <Route path="/graphql" component={GraphqlClient} />
             <Route component={Error} />

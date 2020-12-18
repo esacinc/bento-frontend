@@ -5,13 +5,11 @@ import {
 } from '../../bento/navigationBarData';
 
 const BentoNavBar = () => (
-  <>
-    <NavBar
-      navBarData={navBarData}
-      navBarCartData={navBarCartData}
-      navBarstyling={navBarstyling}
-      numberOfCases={0}
-    />
-  </>
+  <NavBar
+    navBarData={navBarData}
+    navBarCartData={navBarCartData}
+    navBarstyling={navBarstyling}
+    numberOfCases={0}
+  />
 );
 export default BentoNavBar;
