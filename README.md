@@ -7,14 +7,14 @@ This is the skeleton version of Bento-framework, which only contains minimal fea
 quickstart a project without a lot of pre-defined properties. 
 
 ### Features
-Pages:
-	Basic Layout (Header, Nav, MainContainer, Footer).
-	Error Page
-	Landing Page
-	About Page
-	Graphql IDE page
-Utilies:
-	Graphql
-	react-router
-	Eslint
+- Pages:
+	- Basic Layout (Header, Nav, MainContainer, Footer).
+	- Error Page
+	- Landing Page
+	- About Page
+	- Graphql IDE page
+- Utilies:
+	- Graphql
+	- react-router
+	- Eslint
 
