@@ -20,26 +20,12 @@ export const navBarData = [
     link: '/home',
   },
   {
-    labelText: 'programs',
-    type: 'link',
-    link: '/programs',
-  },
-  {
-    labelText: 'cases',
-    type: 'link',
-    link: '/cases',
-  },
-  {
     labelText: 'about',
     type: 'dropdown',
     dropDownLinks: [
       {
         labelText: 'Bento',
         link: '/bento',
-      },
-      {
-        labelText: 'Resources',
-        link: '/resources',
       },
       {
         labelText: 'Graphql',

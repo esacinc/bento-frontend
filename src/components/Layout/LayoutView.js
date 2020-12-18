@@ -6,18 +6,9 @@ import Header from '../Header/HeaderView';
 import NavBar from '../NavBar/NavBarContainer';
 import Footer from '../Footer/FooterView';
 import Error from '../../pages/error/Error';
-import Dashboard from '../../pages/dashboardTab/dashboardController';
-import CaseDetail from '../../pages/caseDetail/caseDetailController';
-import ArmDetail from '../../pages/armDetail/armDetailController';
-import modelPage from '../../pages/modelPage/modelPageView';
-import table from '../../pages/table/tableView';
 import Home from '../../pages/landing/landingController';
 import About from '../../pages/about/aboutController';
-import DataDictonary from '../../pages/dataDictionary/dataDictonaryController';
-import Programs from '../../pages/programs/programsController';
-import ProgramDetail from '../../pages/programDetail/programDetailController';
 import GraphqlClient from '../GraphqlClient/GraphqlView';
-import fileCentricCart from '../../pages/fileCentricCart/cartController';
 
 const ScrollToTop = () => {
   window.scrollTo(0, 0);
@@ -38,21 +29,11 @@ const Layout = ({ classes, isSidebarOpened }) => (
         >
           <Route component={ScrollToTop} />
           <Switch>
-            <Route exact path="/ICDC/" component={Home} />
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
-            <Route path="/cases" component={Dashboard} />
-            <Route path="/programs" component={Programs} />
-            <Route path="/model" component={modelPage} />
-            <Route path="/table" component={table} />
-            <Route path="/fileCentricCart" component={fileCentricCart} />
-            <Route path="/program/:id" component={ProgramDetail} />
-            <Route path="/case/:id" component={CaseDetail} />
-            <Route path="/arm/:id" component={ArmDetail} />
             {aboutPageRoutes.map(
               (aboutPageRoute) => <Route path={aboutPageRoute} component={About} />,
             )}
-            <Route path="/data-dictionary" component={DataDictonary} />
             <Route path="/graphql" component={GraphqlClient} />
             <Route component={Error} />
           </Switch>
