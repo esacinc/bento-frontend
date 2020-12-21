@@ -541,82 +541,6 @@ fileOverview(first: 10) {
 
 export const FILTER_GROUP_QUERY = gql`
   query groupCounts($subject_ids: [String]){
-   subjectCountByProgram(subject_ids: $subject_ids) {
-       group
-       subjects
-   }
-   subjectCountByStudy(subject_ids: $subject_ids) {
-       group
-       subjects
-   }
-   subjectCountByDiagnoses (subject_ids: $subject_ids){
-       group
-       subjects
-   }
-   subjectCountByRecurrenceScore (subject_ids: $subject_ids){
-       group
-       subjects
-   }
-   subjectCountByTumorSize(subject_ids: $subject_ids) {
-       group
-       subjects
-   }
-   subjectCountByChemotherapyRegimen(subject_ids: $subject_ids) {
-       group
-       subjects
-   }
-   subjectCountByEndocrineTherapy (subject_ids: $subject_ids){
-       group
-       subjects
-   }
-   subjectCountByTumorGrade(subject_ids: $subject_ids){
-       group
-       subjects
-   }
-   subjectCountByErStatus(subject_ids: $subject_ids){
-       group
-       subjects
-   }
-   subjectCountByPrStatus(subject_ids: $subject_ids){
-       group
-       subjects
-   }
-   subjectCountByMenopauseStatus(subject_ids: $subject_ids){
-       group
-       subjects
-   }
-   subjectCountByFileType (subject_ids: $subject_ids){
-       group
-       subjects
-   }
-   subjectCountByFileAssociation(subject_ids: $subject_ids) {
-       group
-       subjects
-   }
-   subjectCountByTissueComposition(subject_ids: $subject_ids) {
-       group
-       subjects
-   }
-   subjectCountByTissueType(subject_ids: $subject_ids) {
-       group
-       subjects
-   }
-   subjectCountByFileType (subject_ids: $subject_ids){
-    group
-    subjects
-}
-subjectCountByFileAssociation(subject_ids: $subject_ids) {
-    group
-    subjects
-}
-subjectCountByTissueComposition(subject_ids: $subject_ids) {
-    group
-    subjects
-}
-subjectCountByTissueType(subject_ids: $subject_ids) {
-    group
-    subjects
-}
    armsByPrograms(subject_ids: $subject_ids) {
      program
      caseSize
@@ -626,6 +550,26 @@ subjectCountByTissueType(subject_ids: $subject_ids) {
          size
      }
  }
+ subjectCountByDiagnoses (subject_ids: $subject_ids){
+  group
+  subjects
+}
+subjectCountByRecurrenceScore (subject_ids: $subject_ids){
+  group
+  subjects
+}
+subjectCountByTumorSize(subject_ids: $subject_ids) {
+  group
+  subjects
+}
+subjectCountByChemotherapyRegimen(subject_ids: $subject_ids) {
+  group
+  subjects
+}
+subjectCountByEndocrineTherapy (subject_ids: $subject_ids){
+  group
+  subjects
+}
    
 }
  `;
